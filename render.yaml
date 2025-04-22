@@ -3,6 +3,6 @@ services:
     name: shopify-flask-app
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:py"
+    startCommand: "gunicorn app.py:el-customer-profile"
     plan: free
     region: oregon
